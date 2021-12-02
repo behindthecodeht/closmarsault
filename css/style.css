@@ -1,0 +1,374 @@
+/* // VARIABLES  */
+ :root{
+     --MAIN-COLOR : #dadada;
+     --SEGONDARY-COLOR : #fff;
+     --DESIGN-COLOR : purple;
+ }
+
+
+/* // FONT  */
+
+@font-face {
+    font-family: 'century';
+    src: url(../assets/font/CenturyGothic.ttf);
+}
+
+@font-face {
+    font-family: 'beauty';
+    src: url(../assets/font/Beauty\ in\ the\ Stardust.ttf);
+}
+
+
+/* // GLOBAL STYLE  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'century';
+    font-size: 16px;
+    color: rgb(36, 36, 36);
+}
+
+.separateur{
+    height: 5px;
+    background-color: var(--DESIGN-COLOR);
+    border-radius: 5px;
+    border: none;
+    margin: 35px 0;
+}
+
+.link:hover{
+    color: var(--DESIGN-COLOR);
+}
+
+
+
+/* // SECTION STYLE */
+
+section{
+    padding: 70px 15%;
+}
+
+.section-info{
+    text-align: center;
+}
+
+.section-info h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.section-info p{
+    font-size: 1.2rem;
+}
+
+
+
+/* // HEADER STYLE  */
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: var(--SEGONDARY-COLOR);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 60px;
+    position: fixed;
+    z-index: 9;
+    box-shadow: 10px 0 30px var(--DESIGN-COLOR);
+}
+
+.logo span{
+    color: var(--DESIGN-COLOR);
+    font-family: 'beauty', 'century';
+    font-size: 4rem;
+}
+
+.menu nav a{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/* // BANNER STYLE */
+
+#banner{
+    height: 700px;
+    background-image: url(../image/q-u-i-giL2fHNr3Lc-unsplash.jpg);
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--SEGONDARY-COLOR);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-info span{
+    font-size: 10rem;
+    font-family: 'beauty';
+    text-shadow: 2px 2px 0px var(--DESIGN-COLOR);
+}
+
+.banner-info h3{
+    font-size: 2.5rem;
+}
+
+.banner-info hr{
+    width: 400px;
+    height: 8px;
+    margin: 40px auto;
+}
+
+
+
+/* // SERVICE STYLE  */
+
+#services{
+    background-color: var(--MAIN-COLOR);
+}
+
+.services-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item{
+    width: 32%;
+    height: 100%;
+}
+
+.service-item h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.box-img a{
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    transition: padding ease-in-out .3s;
+}
+
+.box-img a:hover{
+    padding: 5px;
+}
+
+.box-img a img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* // A Propos */
+
+.box-a-propos{
+    margin: 50px;
+    position: relative;
+}
+
+.box-a-propos.left{
+    text-align: right;
+}
+
+.box-a-propos.right{
+    text-align: left;
+}
+
+.box-info{
+    background-color: var(--DESIGN-COLOR);
+    color: var(--SEGONDARY-COLOR);
+    font-weight: bold;
+    padding: 15px 75px;
+    display: inline-block;
+    box-shadow: 10px 10px 10px var(--MAIN-COLOR);
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+}
+
+.left .box-info{
+    left: 40px;
+}
+
+.right .box-info{
+    right: 40px;
+}
+
+.box-a-propos img{
+    width: 85%;
+    border-radius: 10px;
+}
+
+/* // GALLERY STYLE  */
+
+#gallery{
+    background: var(--DESIGN-COLOR);
+    color: var(--SEGONDARY-COLOR);
+}
+
+
+
+
+.gallery-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    width: 25%;
+    height: 300px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background-size ease-in-out .5s;
+}
+
+.gallery-item a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 128, .5);
+    text-align: center;
+    font-family: 'beauty';
+    font-size: 2rem;
+    line-height: 300px;
+    opacity: 0;
+    transition: opacity ease-in-out .5 ;
+}
+
+
+.gallery-item a:hover{
+    opacity: 1;
+}
+
+
+.gallery-item:first-child{
+    background-image: url(../assets/gallery/alevision-co-lw3Lqe2K7xc-unsplash.jpg);
+}
+
+.gallery-item:nth-child(2){
+    background-image: url(../assets/gallery/patrick-robert-doyle-AH8zKXqFITA-unsplash.jpg);
+}
+
+.gallery-item:nth-child(3){
+    background-image: url(../assets/gallery/reisetopia-aI6Su7Mu9Ro-unsplash.jpg);
+}
+
+.gallery-item:nth-child(4){
+    background-image: url(../assets/gallery/reisetopia-fbG4S32ssd8-unsplash.jpg);
+}
+
+.gallery-item:nth-child(5){
+    background-image: url(../assets/gallery/rezha-ramadhan-sV8M_Lkg60Y-unsplash.jpg);
+}
+
+.gallery-item:nth-child(6){
+    background-image: url(../assets/gallery//rhema-kallianpur-jbJ-_hw2yag-unsplash.jpg)
+}
+
+.gallery-item:nth-child(7){
+    background-image: url(../assets/gallery/sidekix-media-g8tb9SXqZVQ-unsplash.jpg);
+}
+
+.gallery-item:nth-child(8){
+    background-image: url(../assets/gallery/visualsofdana-T5pL6ciEn-I-unsplash.jpg);
+}
+
+
+
+
+/* // FOOTER STYLE  */
+
+footer{
+    padding: 70px 15%;
+    background:var(--MAIN-COLOR);
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact-info h1{
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--DESIGN-COLOR);
+}
+
+.contact-info hr{
+    margin: 20px 0;
+}
+
+.contact-info ul{
+    font-size: 1.3rem;
+    list-style: none;
+    line-height: 4rem;
+    vertical-align: middle;
+    font-weight: 550;
+}
+
+.contact-info ul li a i{
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 4rem;
+    vertical-align: middle;
+}
+
+
+.contact-form{
+    width: auto;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, textarea, button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--DESIGN-COLOR);
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+button{
+    background-color: var(--DESIGN-COLOR);
+    color: var(--SEGONDARY-COLOR);
+    text-transform: uppercase;
+}
+
+textarea{
+    height: 150px;
+}
+
+.copyright{
+    font-size: 1.2rem;
+    font-weight: 550;
+    display: flex;
+    justify-content: space-between;
+}
