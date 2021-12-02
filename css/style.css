@@ -54,9 +54,9 @@ body{
 
 /* // SECTION STYLE */
 
-section{
-    padding: 70px 15%;
-}
+/* section, footer{
+    padding: 70px auto;
+}  */
 
 .section-info{
     text-align: center;
@@ -69,6 +69,12 @@ section{
 
 .section-info p{
     font-size: 1.2rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
 }
 
 
@@ -153,7 +159,7 @@ header{
 
 .service-item{
     width: 32%;
-    height: 100%;
+    height: auto;
 }
 
 .service-item h2{
@@ -301,7 +307,6 @@ header{
 /* // FOOTER STYLE  */
 
 footer{
-    padding: 70px 15%;
     background:var(--MAIN-COLOR);
 }
 
@@ -372,3 +377,4 @@ textarea{
     display: flex;
     justify-content: space-between;
 }
+
