@@ -1,0 +1,83 @@
+/* // RESPONSIVE DESIGN  */
+
+@media screen and (max-width: 1250px ) {
+    .container{
+        padding: 70px 30px
+    }
+}
+
+@media screen and (max-width: 996px ) {
+
+    header{
+        justify-content: center;
+    }
+
+    .logo span{
+        font-size: 3rem;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .services-info{
+        flex-wrap: wrap;
+    }
+
+    .service-item{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .service-item h2{
+        font-size: 3rem;
+    }
+
+    .gallery-item{
+        width: 50%;
+        height: 400px;
+    }
+
+    .gallery-item a{
+        height: 100%;
+    }
+
+    .contact{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .contact-info{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+}
+
+
+@media screen and (max-width: 600px ) {
+    .banner{
+        height: 500px;
+    }
+
+    .banner-info span{
+        font-size: 8rem;
+    }
+
+    .gallery-item{
+        width: 100%;
+    }
+
+    .box-info{
+        padding: 10px 15px;
+        top: 40px;
+    }
+
+    .left .box-info{
+        left: 0;
+    }
+
+    .right .box-info{
+        right: 0;
+    }
+}
